@@ -1,0 +1,34 @@
+---
+title: 友链
+date: 2023-02-02 11:45:14
+---
+<div id="links-box" style="margin-top: 20px;"/>
+
+<script>
+    let links = "";
+    [
+        {
+            title: 'Freesia Blog',
+            url: 'https://blog.freesia.icu',
+            icon: 'https://blog.freesia.icu/assets/images/me.jpg',
+            description: '前端菜只因。'
+        },
+        {
+            title: "Indusy's Blog🤗",
+            url: 'https://blog.runnow.top/',
+            icon: '	https://blog.runnow.top/img/avatar.png',
+            description: 'Professional Linux Terminal Slave & 前端搞破坏工程师。'
+        },
+        {
+            title: '炎忍的博客',
+            url: 'https://blog.imyan.ren',
+            icon: 'https://blog.imyan.ren/media/avatar.png',
+            description: '心之所愿，无所不成。'
+        },
+    ].forEach((site) => {
+        const templeta = `<div style='padding: 20px 15px;'><a href="${site.url}" target="_blank"><img src=${site.icon} style='width: 50px;height: 50px;display: inline-block;vertical-align: text-bottom;border-radius: 5px;'/><h3 style="display: inline-block;padding: 0 20px;margin-bottom: 0;">${site.title}</h3></a><p>${site.description}</p></div>`
+        links += templeta
+    })
+    const linksBox = document.getElementById('links-box');
+    linksBox.innerHTML = links;
+</script>
