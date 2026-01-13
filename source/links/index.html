@@ -1,30 +1,42 @@
 ---
 title: 友链
-date: 2023-02-02 11:45:14
+date: 2026-01-14 11:45:14
 ---
-<div id="links-box" style="margin-top: 20px;"/>
+<div id="links-box" style="margin-top: 20px;" />
 
 <script>
     let links = "";
     [
         {
             title: 'Freesia Blog',
-            url: 'https://blog.freesia.icu',
-            icon: 'https://blog.freesia.icu/assets/images/me.jpg',
+            url: 'https://blog.freesia.dev',
+            icon: 'https://blog.freesia.dev/assets/images/me.jpg',
             description: '前端菜只因。'
         },
         {
             title: "Indusy's Blog🤗",
-            url: 'https://blog.runnow.top/',
-            icon: '	https://blog.runnow.top/img/avatar.png',
+            url: 'https://blog.indusy.site/',
+            icon: 'https://blog.indusy.site/favicon.svg',
             description: 'Professional Linux Terminal Slave & 前端搞破坏工程师。'
         },
         {
             title: '炎忍的博客',
-            url: 'https://blog.imyan.ren',
-            icon: 'https://blog.imyan.ren/media/avatar.png',
+            url: 'https://imyan.ren',
+            icon: 'https://imyan.ren/assets/favicon-D4EV7Lae.svg',
             description: '心之所愿，无所不成。'
         },
+        {
+            title: '丁丁の店',
+            url: 'https://blog.butanediol.me/',
+            icon: 'https://blog.butanediol.me/img/favicon.png',
+            description: 'Hi. Butanediol here.'
+        },
+        {
+            title: '逸枫\'s Blog',
+            url: 'https://mizuki-five-bice.vercel.app/',
+            icon: 'https://mizuki-five-bice.vercel.app/favicon/favicon.ico',
+            description: 'Call life as natality, noticing, accompaning, death'
+        }
     ].forEach((site) => {
         const templeta = `<div style='padding: 20px 15px;'><a href="${site.url}" target="_blank"><img src=${site.icon} style='width: 50px;height: 50px;display: inline-block;vertical-align: text-bottom;border-radius: 5px;'/><h3 style="display: inline-block;padding: 0 20px;margin-bottom: 0;">${site.title}</h3></a><p>${site.description}</p></div>`
         links += templeta
